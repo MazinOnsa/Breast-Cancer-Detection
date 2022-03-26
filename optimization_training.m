@@ -16,10 +16,15 @@ H = zeros(N);
 
 m=0.01:0.01:10;
 [opt_sigma, P] = sigma_selection_for_svdd(X, m);
+gain=1;
 
 for i=1:N
     for j=1:N
-   H(i,j) =  y(i) * y(j) * p2p_kernel(X(:,i),X(:,j) , opt_sigma, 1);
+%K = dot(xi,xj); %dot
+K = gain * exp(- norm(xi - xj)^2  /(2*opt_sigma^2)  ); % RBF
+% K = tanh(sigma + gain * dot(xi, xj) );% d-th degree polynomial
+
+   H(i,j) =  y(i) * y(j) * K;
     end
 end
     
