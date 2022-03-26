@@ -8,3 +8,5 @@ F1-score, Precision and recall of the test set then calculated
 RBF found to be the best Kernel of SVM to classify the dataset
 
 optimal sigma for RBF is choosen to be the one who brings the larger variance between the transformed data (generally easier to classify)
+
+[main code is here] <https://github.com/MazinOnsa/Breast-Cancer-Detection/blob/main/main.m>
