@@ -7,6 +7,12 @@ The code solves the Lagrange dual problem of SVM by using quadprog to find alpha
 <a href="url"><img src="https://user-images.githubusercontent.com/59888707/160241528-a3529967-f0af-425f-9d79-6501a3a4fc41.png" align="Center" height="150" width="400" ></a>
 
 
+## Dataset
+4 features 
+800 instances 
+Missing values available
+
+
 F1-score, Precision and recall of the test set then calculated 
 
 RBF found to be the best Kernel of SVM to classify the dataset
